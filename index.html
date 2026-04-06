@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Owen Gilead portfolio with a cinematic, Grok-inspired interface built in HTML, CSS, and JavaScript."
+  >
+  <title>Owen Gilead | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-home">
+  <div class="page-shell">
+    <canvas class="nebula-canvas" aria-hidden="true"></canvas>
+    <div class="aurora aurora-one" aria-hidden="true"></div>
+    <div class="aurora aurora-two" aria-hidden="true"></div>
+    <div class="grid-wash" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="index.html" aria-label="Owen Gilead home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="brandGradient" x1="10%" y1="10%" x2="90%" y2="90%">
+                <stop offset="0%" stop-color="#72e7ff">
+                  <animate attributeName="stop-color" values="#72e7ff;#ccff70;#72e7ff" dur="6s" repeatCount="indefinite"/>
+                </stop>
+                <stop offset="100%" stop-color="#ff915d">
+                  <animate attributeName="stop-color" values="#ff915d;#72e7ff;#ff915d" dur="6s" repeatCount="indefinite"/>
+                </stop>
+              </linearGradient>
+              <filter id="brandGlow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="2.2" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            <rect x="6" y="6" width="60" height="60" rx="18" fill="#08101d" fill-opacity=".78" stroke="url(#brandGradient)" stroke-opacity=".65"/>
+            <circle cx="36" cy="36" r="22" fill="none" stroke="url(#brandGradient)" stroke-width="1.2" stroke-dasharray="5 8" opacity=".75">
+              <animateTransform attributeName="transform" type="rotate" from="0 36 36" to="360 36 36" dur="12s" repeatCount="indefinite"/>
+            </circle>
+            <g filter="url(#brandGlow)">
+              <path d="M21 36 l-5 4 5 4" fill="none" stroke="#72e7ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M51 36 l5 4 -5 4" fill="none" stroke="#ff915d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="20" y="18" width="32" height="9" rx="4.5" fill="url(#brandGradient)" opacity=".92">
+                <animate attributeName="x" values="20;18;20" dur="4.4s" repeatCount="indefinite"/>
+                <animate attributeName="width" values="32;36;32" dur="4.4s" repeatCount="indefinite"/>
+              </rect>
+              <rect x="24" y="45" width="24" height="9" rx="4.5" fill="url(#brandGradient)" opacity=".86">
+                <animate attributeName="x" values="24;22;24" dur="4.8s" repeatCount="indefinite"/>
+                <animate attributeName="width" values="24;28;24" dur="4.8s" repeatCount="indefinite"/>
+              </rect>
+              <path d="M36 27 L36 45" fill="none" stroke="url(#brandGradient)" stroke-width="3" stroke-linecap="round">
+                <animate attributeName="opacity" values=".45;1;.45" dur="2.6s" repeatCount="indefinite"/>
+              </path>
+              <circle cx="36" cy="36" r="4.2" fill="#ccff70">
+                <animate attributeName="r" values="4.2;5.2;4.2" dur="2.1s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="36" cy="36" r="8" fill="none" stroke="#72e7ff" stroke-opacity=".45">
+                <animate attributeName="r" values="8;14;8" dur="3.6s" repeatCount="indefinite"/>
+                <animate attributeName="stroke-opacity" values=".45;.08;.45" dur="3.6s" repeatCount="indefinite"/>
+              </circle>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>Owen Gilead</strong>
+          <span>Dark Motion Portfolio</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="stack.html">Stack</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="button button-ghost magnetic" href="mailto:owengilead@gmail.com">
+        Email Owen
+      </a>
+    </header>
+
+    <main class="page-main">
+      <section class="section page-hero hero-grid">
+        <div class="hero-copy" data-reveal="up">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            Grok-inspired interface energy
+          </div>
+
+          <h1>
+            Dark, electric, cinematic
+            <span class="headline-accent">digital presence</span>
+            for a modern developer.
+          </h1>
+
+          <p class="hero-text">
+            Owen Gilead creates sharp interfaces with HTML, CSS, JavaScript,
+            Python, Java, Git, Vercel, Neon Postgres, and SQL, blending premium
+            motion, expressive UI, and a cleaner full-stack experience.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button magnetic" href="stack.html">Explore Stack</a>
+            <a class="button button-ghost magnetic" href="contact.html">Start a Project</a>
+          </div>
+
+          <div class="hero-metrics">
+            <article class="metric-card" data-reveal="up">
+              <span class="metric-value" data-count="9">0</span>
+              <span class="metric-label">Core Technologies</span>
+            </article>
+            <article class="metric-card" data-reveal="up" data-delay="120">
+              <span class="metric-value" data-count="4">0</span>
+              <span class="metric-label">Portfolio Pages</span>
+            </article>
+            <article class="metric-card" data-reveal="up" data-delay="180">
+              <span class="metric-value" data-count="100">0</span>
+              <span class="metric-label">Custom Visual Direction</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal="left">
+          <div class="motion-frame card-tilt">
+            <div class="motion-top">
+              <span class="pill">Motion First</span>
+              <span class="pill">Grok Vibe</span>
+            </div>
+
+            <div class="motion-scene">
+              <div class="ring ring-a"></div>
+              <div class="ring ring-b"></div>
+              <div class="ring ring-c"></div>
+              <div class="pulse pulse-a"></div>
+              <div class="pulse pulse-b"></div>
+              <div class="beam"></div>
+
+              <article class="hud-card" data-float>
+                <span class="hud-label">UI Signal</span>
+                <strong>Layered gradients, glass panels, and cinematic motion.</strong>
+              </article>
+
+              <article class="hud-card hud-card-secondary" data-float style="--float-delay: -2.2s;">
+                <span class="hud-label">Stack</span>
+                <strong>HTML, CSS, JS, Python, Java, Git, Vercel, Neon, SQL</strong>
+              </article>
+            </div>
+
+            <div class="stack-ribbon">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <span>Python</span>
+              <span>Java</span>
+              <span>Git</span>
+              <span>Vercel</span>
+              <span>Neon</span>
+              <span>SQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section signal-strip" data-reveal="up">
+        <div class="marquee">
+          <div class="marquee-track">
+            <span>Dark UI</span>
+            <span>Electric Color</span>
+            <span>Motion Systems</span>
+            <span>Responsive Layouts</span>
+            <span>Animated Backgrounds</span>
+            <span>Frontend Craft</span>
+            <span>Dark UI</span>
+            <span>Electric Color</span>
+            <span>Motion Systems</span>
+            <span>Responsive Layouts</span>
+            <span>Animated Backgrounds</span>
+            <span>Frontend Craft</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading" data-reveal="up">
+          <span class="section-kicker">Navigation</span>
+          <h2>A multi-page portfolio with clearer flow and stronger atmosphere.</h2>
+          <p>
+            Each page pushes a different part of the brand: story, stack, contact,
+            and a homepage that immediately sells the mood.
+          </p>
+        </div>
+
+        <div class="page-card-grid">
+          <a class="nav-card card-tilt" href="about.html" data-reveal="up">
+            <span class="card-tag">About</span>
+            <h3>See the design mindset, workflow, and creative direction.</h3>
+            <span class="card-arrow">Open page</span>
+          </a>
+
+          <a class="nav-card card-tilt" href="stack.html" data-reveal="up" data-delay="100">
+            <span class="card-tag">Stack</span>
+            <h3>Explore the technologies and capabilities behind the interface.</h3>
+            <span class="card-arrow">View stack</span>
+          </a>
+
+          <a class="nav-card card-tilt" href="contact.html" data-reveal="up" data-delay="180">
+            <span class="card-tag">Contact</span>
+            <h3>Reach out by email or phone and kick off the next build.</h3>
+            <span class="card-arrow">Start contact</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading" data-reveal="up">
+          <span class="section-kicker">Why It Feels Premium</span>
+          <h2>More than a color change, this redesign adds rhythm, depth, and live motion.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card card-tilt" data-reveal="up">
+            <span class="feature-number">01</span>
+            <h3>Animated Background System</h3>
+            <p>
+              A canvas-driven backdrop creates a lightweight video-like effect
+              with drifting particles, signal lines, and layered glow.
+            </p>
+          </article>
+
+          <article class="feature-card card-tilt" data-reveal="up" data-delay="100">
+            <span class="feature-number">02</span>
+            <h3>Sharper Color Story</h3>
+            <p>
+              Cyan, ember, and acid-lime accents shift the site away from a basic
+              look into something darker, bolder, and more futuristic.
+            </p>
+          </article>
+
+          <article class="feature-card card-tilt" data-reveal="up" data-delay="180">
+            <span class="feature-number">03</span>
+            <h3>More Motion Layers</h3>
+            <p>
+              Marquee ribbons, hover magnetism, card tilt, loading fade, scroll
+              reveals, and glowing orbit shapes all work together.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-section" data-reveal="up">
+        <div class="cta-panel card-tilt">
+          <div>
+            <span class="section-kicker">Next Step</span>
+            <h2>Want the same energy applied to your own project?</h2>
+          </div>
+          <div class="cta-actions">
+            <a class="button magnetic" href="contact.html">Let’s Talk</a>
+            <a class="button button-ghost magnetic" href="about.html">Read More</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Owen Gilead. Built with HTML, CSS, and JavaScript.</p>
+      <p><span data-year></span> • owengilead@gmail.com • 09137443912</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Contact Owen Gilead for portfolio sites, modern interfaces, and motion-focused front-end work."
+  >
+  <title>Owen Gilead | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-contact">
+  <div class="page-shell">
+    <canvas class="nebula-canvas" aria-hidden="true"></canvas>
+    <div class="aurora aurora-one" aria-hidden="true"></div>
+    <div class="aurora aurora-two" aria-hidden="true"></div>
+    <div class="grid-wash" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="index.html" aria-label="Owen Gilead home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="brandGradient" x1="10%" y1="10%" x2="90%" y2="90%">
+                <stop offset="0%" stop-color="#72e7ff">
+                  <animate attributeName="stop-color" values="#72e7ff;#ccff70;#72e7ff" dur="6s" repeatCount="indefinite"/>
+                </stop>
+                <stop offset="100%" stop-color="#ff915d">
+                  <animate attributeName="stop-color" values="#ff915d;#72e7ff;#ff915d" dur="6s" repeatCount="indefinite"/>
+                </stop>
+              </linearGradient>
+              <filter id="brandGlow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="2.2" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            <rect x="6" y="6" width="60" height="60" rx="18" fill="#08101d" fill-opacity=".78" stroke="url(#brandGradient)" stroke-opacity=".65"/>
+            <circle cx="36" cy="36" r="22" fill="none" stroke="url(#brandGradient)" stroke-width="1.2" stroke-dasharray="5 8" opacity=".75">
+              <animateTransform attributeName="transform" type="rotate" from="0 36 36" to="360 36 36" dur="12s" repeatCount="indefinite"/>
+            </circle>
+            <g filter="url(#brandGlow)">
+              <path d="M21 36 l-5 4 5 4" fill="none" stroke="#72e7ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M51 36 l5 4 -5 4" fill="none" stroke="#ff915d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="20" y="18" width="32" height="9" rx="4.5" fill="url(#brandGradient)" opacity=".92">
+                <animate attributeName="x" values="20;18;20" dur="4.4s" repeatCount="indefinite"/>
+                <animate attributeName="width" values="32;36;32" dur="4.4s" repeatCount="indefinite"/>
+              </rect>
+              <rect x="24" y="45" width="24" height="9" rx="4.5" fill="url(#brandGradient)" opacity=".86">
+                <animate attributeName="x" values="24;22;24" dur="4.8s" repeatCount="indefinite"/>
+                <animate attributeName="width" values="24;28;24" dur="4.8s" repeatCount="indefinite"/>
+              </rect>
+              <path d="M36 27 L36 45" fill="none" stroke="url(#brandGradient)" stroke-width="3" stroke-linecap="round">
+                <animate attributeName="opacity" values=".45;1;.45" dur="2.6s" repeatCount="indefinite"/>
+              </path>
+              <circle cx="36" cy="36" r="4.2" fill="#ccff70">
+                <animate attributeName="r" values="4.2;5.2;4.2" dur="2.1s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="36" cy="36" r="8" fill="none" stroke="#72e7ff" stroke-opacity=".45">
+                <animate attributeName="r" values="8;14;8" dur="3.6s" repeatCount="indefinite"/>
+                <animate attributeName="stroke-opacity" values=".45;.08;.45" dur="3.6s" repeatCount="indefinite"/>
+              </circle>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>Owen Gilead</strong>
+          <span>Dark Motion Portfolio</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="stack.html">Stack</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="button button-ghost magnetic" href="mailto:owengilead@gmail.com">
+        Email Owen
+      </a>
+    </header>
+
+    <main class="page-main">
+      <section class="section page-intro intro-grid">
+        <div class="title-text" data-reveal="up">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            Contact and enquiries
+          </div>
+          <h1>
+            Let’s build something
+            <span class="headline-accent">bold, modern</span>
+            and memorable.
+          </h1>
+          <p class="hero-text">
+            Reach Owen Gilead for modern portfolio sites, UI revamps, landing
+            pages, and motion-focused interface work with stronger visual taste.
+          </p>
+        </div>
+
+        <aside class="title-side card-tilt" data-reveal="left">
+          <span class="card-tag">Direct Reach</span>
+          <h3>Fastest contact is still direct email or phone.</h3>
+          <div class="mini-stats">
+            <article>
+              <strong>Email</strong>
+              <span>owengilead@gmail.com</span>
+            </article>
+            <article>
+              <strong>Phone</strong>
+              <span>09137443912</span>
+            </article>
+            <article>
+              <strong>Mode</strong>
+              <span>Remote-ready and collaboration friendly</span>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="contact-layout">
+          <div class="contact-column">
+            <a class="contact-card card-tilt magnetic" href="mailto:owengilead@gmail.com" data-reveal="up">
+              <span class="card-tag">Email</span>
+              <h3>owengilead@gmail.com</h3>
+              <p>Use email for project details, briefs, or collaboration ideas.</p>
+            </a>
+
+            <a class="contact-card card-tilt magnetic" href="tel:+2349137443912" data-reveal="up" data-delay="100">
+              <span class="card-tag">Phone</span>
+              <h3>09137443912</h3>
+              <p>Call or message directly if you want a faster conversation.</p>
+            </a>
+
+            <article class="contact-card card-tilt" data-reveal="up" data-delay="180">
+              <span class="card-tag">Best Fit</span>
+              <h3>Portfolio sites, landing pages, and visual refresh work.</h3>
+              <p>Ideal for projects that need stronger UI presence and more animation polish.</p>
+            </article>
+          </div>
+
+          <div class="form-card card-tilt" data-reveal="left">
+            <span class="card-tag">Quick Message</span>
+            <h2>Send a short brief.</h2>
+            <p class="form-intro">
+              This form opens your email app with the message prepared for Owen.
+            </p>
+
+            <form class="contact-form" data-contact-form>
+              <label class="field">
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" required>
+              </label>
+
+              <label class="field">
+                <span>Project Type</span>
+                <select name="project">
+                  <option value="Portfolio site">Portfolio site</option>
+                  <option value="Landing page">Landing page</option>
+                  <option value="UI redesign">UI redesign</option>
+                  <option value="Frontend build">Frontend build</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Tell Owen what you want to build." required></textarea>
+              </label>
+
+              <button class="button magnetic" type="submit">Open Email Draft</button>
+              <p class="form-note" data-form-note>Your email app will open with your message filled in.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading" data-reveal="up">
+          <span class="section-kicker">Simple FAQ</span>
+          <h2>What this portfolio is currently optimized for.</h2>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card card-tilt" data-reveal="up">
+            <span class="feature-number">01</span>
+            <h3>Modern Aesthetic</h3>
+            <p>Dark, cinematic, high-contrast interfaces with more personality.</p>
+          </article>
+
+          <article class="value-card card-tilt" data-reveal="up" data-delay="100">
+            <span class="feature-number">02</span>
+            <h3>Responsive Build</h3>
+            <p>Layouts tuned for desktop and mobile instead of desktop-only mockups.</p>
+          </article>
+
+          <article class="value-card card-tilt" data-reveal="up" data-delay="180">
+            <span class="feature-number">03</span>
+            <h3>Animation Polish</h3>
+            <p>Motion layers that enhance the feel of the site without overwhelming it.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Owen Gilead. Built with HTML, CSS, and JavaScript.</p>
+      <p><span data-year></span> • owengilead@gmail.com • 09137443912</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
