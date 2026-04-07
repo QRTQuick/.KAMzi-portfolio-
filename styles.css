@@ -45,6 +45,7 @@ body.page-contact {
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--bg-deep);
 }
 
 body {
@@ -57,12 +58,11 @@ body {
   color: var(--text);
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   overflow-x: hidden;
-  opacity: 0;
-  transition: opacity 700ms ease;
 }
 
-body.is-ready {
-  opacity: 1;
+.js .page-shell {
+  opacity: 0;
+  transition: opacity 700ms ease;
 }
 
 img,
@@ -92,6 +92,10 @@ a,
 .page-shell {
   position: relative;
   isolation: isolate;
+}
+
+.js body.is-ready .page-shell {
+  opacity: 1;
 }
 
 .nebula-canvas,
@@ -266,6 +270,14 @@ a,
   color: var(--text);
   background: rgba(255, 255, 255, 0.08);
   transform: translateY(-1px);
+}
+
+.header-actions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .page-main {
@@ -1012,6 +1024,15 @@ h1 {
     overflow-x: auto;
   }
 
+  .header-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .header-actions .button {
+    flex: 1 1 12rem;
+  }
+
   .section,
   .site-footer {
     width: min(calc(100% - 1.2rem), var(--max-width));
@@ -1099,7 +1120,7 @@ h1 {
     transition-delay: 0ms !important;
   }
 
-  body {
+  .js .page-shell {
     opacity: 1;
   }
 
