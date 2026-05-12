@@ -1,40 +1,40 @@
 :root {
-  --bg: #050816;
-  --bg-deep: #03050d;
-  --surface: rgba(9, 16, 31, 0.76);
-  --surface-strong: rgba(12, 20, 38, 0.92);
-  --text: #edf5ff;
-  --muted: #90a2c4;
-  --line: rgba(135, 185, 255, 0.18);
-  --accent: #72e7ff;
-  --accent-strong: #ff915d;
-  --accent-alt: #ccff70;
-  --accent-glow: rgba(114, 231, 255, 0.24);
-  --shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
-  --radius-xl: 32px;
-  --radius-lg: 24px;
-  --max-width: 1200px;
-  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --bg: #0a0e1a;
+  --bg-deep: #050810;
+  --surface: rgba(15, 23, 42, 0.82);
+  --surface-strong: rgba(18, 26, 48, 0.94);
+  --text: #f0f4fc;
+  --muted: #8b9bb4;
+  --line: rgba(148, 163, 184, 0.14);
+  --accent: #60a5fa;
+  --accent-strong: #3b82f6;
+  --accent-alt: #818cf8;
+  --accent-glow: rgba(96, 165, 250, 0.28);
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.42);
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --max-width: 1280px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 body.page-home {
-  --accent: #72e7ff;
-  --accent-strong: #ff915d;
+  --accent: #60a5fa;
+  --accent-strong: #3b82f6;
 }
 
 body.page-about {
-  --accent: #86ecff;
-  --accent-strong: #ff8d73;
+  --accent: #7dd3fc;
+  --accent-strong: #38bdf8;
 }
 
 body.page-stack {
-  --accent: #74d8ff;
-  --accent-strong: #ffb45d;
+  --accent: #818cf8;
+  --accent-strong: #6366f1;
 }
 
 body.page-contact {
-  --accent: #79ffd6;
-  --accent-strong: #ff8665;
+  --accent: #34d399;
+  --accent-strong: #10b981;
 }
 
 *,
@@ -52,9 +52,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 15% 10%, rgba(114, 231, 255, 0.09), transparent 26%),
-    radial-gradient(circle at 84% 16%, rgba(255, 145, 93, 0.11), transparent 28%),
-    linear-gradient(180deg, #08101d 0%, #050816 44%, #03050d 100%);
+    radial-gradient(circle at 20% 15%, rgba(96, 165, 250, 0.08), transparent 30%),
+    radial-gradient(circle at 80% 25%, rgba(129, 140, 248, 0.08), transparent 32%),
+    linear-gradient(180deg, #0a0e1a 0%, #050810 44%, #030508 100%);
   color: var(--text);
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   overflow-x: hidden;
@@ -127,7 +127,7 @@ a,
   height: 32rem;
   top: -6rem;
   right: -5rem;
-  background: radial-gradient(circle, rgba(114, 231, 255, 0.28), transparent 64%);
+  background: radial-gradient(circle, rgba(96, 165, 250, 0.22), transparent 64%);
   animation: auroraShift 18s ease-in-out infinite alternate;
 }
 
@@ -136,7 +136,7 @@ a,
   height: 28rem;
   left: -8rem;
   top: 30rem;
-  background: radial-gradient(circle, rgba(255, 145, 93, 0.22), transparent 60%);
+  background: radial-gradient(circle, rgba(129, 140, 248, 0.18), transparent 60%);
   animation: auroraShift 22s ease-in-out infinite alternate-reverse;
 }
 
@@ -147,10 +147,10 @@ a,
 
 .grid-wash {
   z-index: -4;
-  opacity: 0.24;
+  opacity: 0.18;
   background-image:
-    linear-gradient(rgba(114, 231, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(114, 231, 255, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(96, 165, 250, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(96, 165, 250, 0.06) 1px, transparent 1px);
   background-size: 92px 92px;
   mask-image: radial-gradient(circle at center, black 35%, transparent 95%);
 }
@@ -169,7 +169,7 @@ a,
   top: 0;
   z-index: -2;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(114, 231, 255, 0.13), transparent 68%);
+  background: radial-gradient(circle, rgba(96, 165, 250, 0.12), transparent 68%);
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 240ms ease;
@@ -222,7 +222,7 @@ a,
   height: 3.2rem;
   display: block;
   flex: 0 0 auto;
-  filter: drop-shadow(0 0 18px rgba(114, 231, 255, 0.18));
+  filter: drop-shadow(0 0 18px rgba(96, 165, 250, 0.18));
 }
 
 .brand-mark svg {
@@ -408,17 +408,17 @@ h1 {
   padding: 1rem 1.45rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent), var(--accent-alt));
-  color: #041017;
+  color: #08101a;
   border: 1px solid transparent;
   font-weight: 700;
-  box-shadow: 0 18px 34px rgba(114, 231, 255, 0.16);
+  box-shadow: 0 18px 34px rgba(96, 165, 250, 0.20);
   transition: transform 240ms var(--ease-out), box-shadow 240ms var(--ease-out), filter 240ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 20px 46px rgba(114, 231, 255, 0.18);
+  box-shadow: 0 20px 46px rgba(96, 165, 250, 0.24);
   filter: saturate(1.05);
 }
 
@@ -484,7 +484,7 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 18%, rgba(114, 231, 255, 0.12), transparent 24%), radial-gradient(circle at 84% 72%, rgba(255, 145, 93, 0.14), transparent 26%);
+  background: radial-gradient(circle at 20% 18%, rgba(96, 165, 250, 0.10), transparent 24%), radial-gradient(circle at 84% 72%, rgba(129, 140, 248, 0.10), transparent 26%);
   pointer-events: none;
 }
 
@@ -513,17 +513,17 @@ h1 {
   min-height: 30rem;
   border-radius: calc(var(--radius-xl) - 10px);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: radial-gradient(circle at center, rgba(114, 231, 255, 0.12), transparent 28%), linear-gradient(180deg, rgba(8, 15, 29, 0.96), rgba(5, 8, 16, 0.84));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: radial-gradient(circle at center, rgba(96, 165, 250, 0.10), transparent 28%), linear-gradient(180deg, rgba(10, 14, 26, 0.96), rgba(5, 8, 16, 0.84));
 }
 
 .motion-scene::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(114, 231, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(114, 231, 255, 0.1) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(96, 165, 250, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(96, 165, 250, 0.08) 1px, transparent 1px);
   background-size: 50px 50px;
-  opacity: 0.35;
+  opacity: 0.28;
   mask-image: radial-gradient(circle at center, black 28%, transparent 90%);
 }
 
@@ -537,8 +537,8 @@ h1 {
 }
 
 .ring {
-  border: 1px solid rgba(114, 231, 255, 0.2);
-  box-shadow: inset 0 0 30px rgba(114, 231, 255, 0.08), 0 0 30px rgba(114, 231, 255, 0.08);
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  box-shadow: inset 0 0 30px rgba(96, 165, 250, 0.06), 0 0 30px rgba(96, 165, 250, 0.06);
 }
 
 .ring-a {
@@ -550,7 +550,7 @@ h1 {
 .ring-b {
   width: 20rem;
   height: 20rem;
-  border-color: rgba(255, 145, 93, 0.18);
+  border-color: rgba(129, 140, 248, 0.16);
   animation: spinReverse 22s linear infinite;
 }
 
@@ -558,7 +558,7 @@ h1 {
   width: 27rem;
   height: 27rem;
   border-style: dashed;
-  border-color: rgba(204, 255, 112, 0.16);
+  border-color: rgba(165, 180, 252, 0.14);
   animation: spinSlow 30s linear infinite;
 }
 
@@ -569,21 +569,21 @@ h1 {
 .pulse-a {
   width: 7rem;
   height: 7rem;
-  background: radial-gradient(circle, rgba(114, 231, 255, 0.44), transparent 72%);
+  background: radial-gradient(circle, rgba(96, 165, 250, 0.38), transparent 72%);
   animation: pulseBloom 4s ease-in-out infinite;
 }
 
 .pulse-b {
   width: 12rem;
   height: 12rem;
-  background: radial-gradient(circle, rgba(255, 145, 93, 0.2), transparent 74%);
+  background: radial-gradient(circle, rgba(129, 140, 248, 0.18), transparent 74%);
   animation: pulseBloom 6s ease-in-out infinite reverse;
 }
 
 .beam {
   width: 160%;
   height: 18rem;
-  background: linear-gradient(90deg, transparent 0, rgba(114, 231, 255, 0.12) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0, rgba(96, 165, 250, 0.10) 50%, transparent 100%);
   transform: translate(-50%, -50%) rotate(-14deg);
   animation: beamSweep 9s linear infinite;
 }
@@ -822,7 +822,7 @@ h1 {
   height: 100%;
   border-radius: inherit;
   background: linear-gradient(90deg, var(--accent), var(--accent-strong), var(--accent-alt));
-  box-shadow: 0 0 26px rgba(114, 231, 255, 0.18);
+  box-shadow: 0 0 26px rgba(96, 165, 250, 0.18);
 }
 
 .contact-column {
@@ -881,9 +881,9 @@ h1 {
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
-  border-color: rgba(114, 231, 255, 0.4);
+  border-color: rgba(96, 165, 250, 0.45);
   background: rgba(255, 255, 255, 0.07);
-  box-shadow: 0 0 0 4px rgba(114, 231, 255, 0.08);
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.08);
 }
 
 .field textarea {
@@ -945,7 +945,7 @@ h1 {
 .feature-card:hover,
 .value-card:hover,
 .tech-card:hover {
-  border-color: rgba(114, 231, 255, 0.26);
+  border-color: rgba(96, 165, 250, 0.32);
 }
 
 @keyframes auroraShift {
